@@ -10,14 +10,12 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 export class LiveTableComponent implements OnInit {
 
-  items: FirebaseListObservable<any[]>;
-  myItems: Object[];
+  items: Object[];
 
   constructor(private _ngZone: NgZone, af: AngularFire) {
-    this.items = af.database.list('/league/110296/players');
-    this.items.subscribe(items => {
+    af.database.list('/league/110296/players').subscribe(items => {
       this._ngZone.run(() => {
-        this.myItems = items;
+        this.items = items;
       })
     });
   }

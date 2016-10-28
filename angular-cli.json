@@ -22,7 +22,7 @@
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js"
+        "assets/bootstrap/dist/js/bootstrap.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

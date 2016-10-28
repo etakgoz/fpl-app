@@ -8,11 +8,15 @@ import { routing }      from './app.routing';
 
 import { AppComponent } from './app.component';
 import { LiveTableComponent } from './live-table/live-table.component';
+import { TopHeaderComponent } from './top-header/top-header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LiveTableComponent
+    LiveTableComponent,
+    TopHeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

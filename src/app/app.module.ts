@@ -17,7 +17,8 @@ import { LiveTableComponent } from './live-table/live-table.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

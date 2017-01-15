@@ -1,12 +1,23 @@
 <div class="container">
-
     <div class="row">
       <div class="col-md-12">
-        <ul>
+        <p>Current Gameweek is: {{currentGameweek}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div *ngFor="let gameweekResults of results">
+          <div *ngFor="let result of gameweekResults">
+            <p>{{playersMap[result.playerId].team}}: {{result.totalPoints}} - {{result.points}} - {{result.transferCost}}</p>
+          </div>
+          <hr/>
+        </div>
+
+        <!--<ul>
           <li class="text" *ngFor="let item of items">
-            {{item.id}} - {{item.name}} - {{item.team}}
+            {{player.id}} - {{player.name}} - {{player.team}}
           </li>
-        </ul>
+        </ul>-->
       </div>
     </div>
 </div>
